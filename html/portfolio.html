@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollmagic@2.0.8/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-method="position">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top box-t" style="background-color: transparent;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand mx-auto d-flex align-items-center" href="/">Portfolio | Maxime Carpentier</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#Presentation" class="nav-link">Présentation</a></li>
+                <li class="nav-item"><a href="#Projets" class="nav-link">Projets</a></li>
+                <li class="nav-item"><a href="#Langages" class="nav-link">Langages</a></li>
+                <li class="nav-item"><a href="#Experience" class="nav-link">Expérience</a></li>
+                <li class="nav-item"><a href="#Formation" class="nav-link">Formation</a></li>
+                <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="espace"></div>
+
+    <img class="card-img-top" src="../img/designe/designe_1.png" alt="Card image" style="width:30%; margin-left: 15vh">
+
+    <!-- Profile -->
+    <div class="container" style="margin-top: 50;">
+      <!-- Présentation -->
+      <div class="jumbotron box-1" id="Presentation">
+        <div class="d-flex flex-row justify-content-between align-middle">
+          <h1 class="p-2 txt-resize" style="width: fit-content; block-size: fit-content;">Maxime Carpentier</h1>
+          <img class="p-2 img-resize" src="../img/entreprise/epitech.jpg" alt="Card image" style="display: none; border-radius: 2vh;">
+        </div>
+        <p class="font-weight-bold">Étudiant en informatique à Epitech Lille</p>
+        <p>Je suis actuellement étudiant à Epitech Lille, en 3ème année post-bac. J’ai un grand intérêt pour les
+          nouvelles technologies et l’informatique. J'ai étudié au conservatoire de mes 9 à 16 ans et
+          j'ai participé à la soirée des talents de mon école où j’ai joué devant plus de 500 personnes. J'ai
+          pratiqué la natation depuis mes 6 ans à Nangis, participant à de nombreuses compétitions. Après quatre ans d'internat,
+          je me suis consacré au dessin, une passion que je voulais explorer depuis longtemps.</p>
+      </div>
+
+      <!-- Projets -->
+      <div class="d-flex flex-row justify-content-around align-middle caravel-parent" id="Projets" style="overflow: hidden;">
+
+        <!-- Carousel -->
+        <div class="jumbotron card box-1 caravel" style="width:400px" id="test">
+            <img class="card-img-top" src="../img/designe/designe_1.png" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Planète 2D</h4>
+                <p class="card-text">Un simulateur d’interaction gravitationnelle entre planètes.</p>
+            </div>
+        </div>
+
+        <div class="jumbotron card box-2 caravel" style="width:400px">
+            <img class="card-img-top" src="../img/designe/designe_2.png" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Jumper IA</h4>
+                <p class="card-text">Création d’une IA en machine learning de A à Z.</p>
+            </div>
+        </div>
+        <div class="jumbotron card box-1 caravel" style="width:400px">
+            <img class="card-img-top" src="../img/designe/designe_3.png" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">2D World Generator</h4>
+                <p class="card-text">Génération d’un monde utilisant le bruit de Perlin, ainsi que la possibilité de créer son monde.</p>
+            </div>
+        </div>
+
+        <div class="jumbotron card box-2 caravel" style="width:400px">
+            <img class="card-img-top" src="../img/designe/designe_4.jpg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Kingdom Tower</h4>
+                <p class="card-text">Jeu 2D en Java, projet Epitech.</p>
+            </div>
+        </div>
+
+        <!-- Btn-next -->
+        <div class="caravel-btn caravel-btn-left">
+          <p>&lt</p>
+        </div>
+
+        <!-- Btn-previous -->
+        <div class="caravel-btn caravel-btn-right">
+          <p>&gt</p>
+        </div>
+      </div>
+
+      <!-- Langages (informatique) -->
+      <div class="jumbotron box-3" id="Langages">
+          <div class="d-flex flex-row justify-content-between align-middle">
+            <h2 class="p-2 txt-resize" style="font-size: xx-large;">Langages (informatique)</h2>
+            <img class="p-2 img-resize" src="../img/designe/designe_2.png" alt="Card image" style="width:3%; height:3%; border-radius: 2vh;">
+          </div>
+          <p>Je connais les langages suivants : C, C++, Java, Python, HTML, CSS, PHP, SQL, JavaScript.</p>
+          <div class="d-flex flex-row justify-content-between">
+            <img class="card-img-top" src="../img/langages/c.png" alt="Card image" style="width:5%; height:5%;">
+            <img class="card-img-top" src="../img/langages/c++.png" alt="Card image" style="width:5%; height:5%;">
+            <img class="card-img-top" src="../img/langages/java.png" alt="Card image" style="width:5%; height:5%;">
+            <img class="card-img-top" src="../img/langages/python.png" alt="Card image" style="width:5%; height:5%;">
+            <img class="card-img-top" src="../img/langages/html.png" alt="Card image" style="width:5%; height:5%;">
+            <img class="card-img-top" src="../img/langages/css.png" alt="Card image" style="width:5%; height:5%;">
+            <img class="card-img-top" src="../img/langages/php.png" alt="Card image" style="width:5%; height:5%;">
+            <img class="card-img-top" src="../img/langages/sql.png" alt="Card image" style="width:5%; height:5%;">
+            <img class="card-img-top" src="../img/langages/js.png" alt="Card image" style="width:5%; height:5%;">
+        </div>
+      </div>
+
+      <!-- Expérience -->
+      <div class="jumbotron box-1" id="Experience">
+        <h2 style="font-size: xx-large;">Expérience</h2>
+        <div class="d-flex">
+          <img class="p-2 img-resize" src="../img/entreprise/sopra_steria.jpg" alt="Card image" style="display: none; border-radius: 2vh;">
+          <p class="p-2 txt-resize" style="width: fit-content; block-size: fit-content;"><strong>Stage chez Sopra Banking Software - 2019</strong><br>
+            Immersion dans une équipe d'informatique - Stage de découverte</p>
+        </div>
+        <div class="d-flex flex-row align-middle">
+          <img class="p-2  img-resize" src="../img/entreprise/hillgrove.jpg" alt="Card image" style="display: none; border-radius: 2vh;">
+          <p class="p-2 txt-resize" style="width: fit-content; block-size: fit-content;"><strong>HillGrove Hotel - Agent d’Entretien - 2022</strong><br>
+              Entretien des infrastructures - Relation client - Travail d’équipe - Anglais</p>
+        </div>
+      </div>
+
+      <!-- Formation -->
+      <div class="jumbotron box-2 parallax" id="Formation">
+          <h3>Formation</h3>
+          <div class="d-flex">
+            <img class="p-2 img-resize" src="../img/entreprise/sopra_steria.jpg" alt="Card image" style="display: none; border-radius: 2vh;">
+            <p class="p-2 txt-resize"><strong>Epitech MSc</strong></p>
+          </div>
+          <div class="d-flex">
+            <img class="p-2 img-resize" src="../img/entreprise/sopra_steria.jpg" alt="Card image" style="display: none; border-radius: 2vh;">
+            <p class="p-2 txt-resize"><strong>Classe Préparatoire Grandes Ecoles - TSI - Meaux, 77 - 2021-2023</strong></p>
+          </div>
+          <div class="d-flex">
+            <img class="p-2 img-resize" src="../img/entreprise/sopra_steria.jpg" alt="Card image" style="display: none; border-radius: 2vh;">
+            <p class="p-2 txt-resize"><strong>BAC STI2D SIN - Champagne-sur-seine, 77 - 2019-2021</strong></p>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="jumbotron box-3" id="Contact">
+            <h3>Contact</h3>
+            <p><strong>Adresse :</strong> Lille, Beaux arts</p>
+            <p><strong>Téléphone :</strong> +33 6 30 52 56 04</p>
+            <p><strong>Email :</strong> maxime.carpentier@epitech.eu</p>
+            <p><strong>LinkedIn :</strong> [Votre profil LinkedIn]</p>
+        </div>
+
+    </div>
+
+    <!-- Image Background -->
+    <img class="card-img-top" src="../img/designe/designe_5.jpg" alt="Card image" style="position: absolute; bottom: 0; z-index: -5;">
+    
+
+    <!-- Script -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
