@@ -87,7 +87,18 @@ class Caravel {
         for (let i = 0; i < this.allCaravel.length; i++) {
             this.allCaravel[i].style.position = 'absolute';
             this.allCaravel[i].style.left = i === 0 ? '0px' : `${parseInt(this.allCaravel[i].style.width.replace('px', '')) * i + (this.offset * i)}px`;
-            this.allCaravel[i].style.height = this.allCaravel[0].offsetHeight + 'px';
+
+            // Set styles for the image
+            this.allCaravel[i].querySelector('img').style.height = 300 + 'px';
+            this.allCaravel[i].querySelector('img').style.width = '100%';
+            this.allCaravel[i].querySelector('img').style.objectFit = 'cover';
+            this.allCaravel[i].querySelector('img').style.overflow = 'hidden';
+
+            // Set styles for the text
+            this.allCaravel[i].querySelector('div').style.height = 150 + 'px';
+            this.allCaravel[i].querySelector('div').style.width = '100%';
+
+
             this.allCaravel[i].style.transition = "filter 0.3s ease, opacity 0.3s ease";
         }
 
