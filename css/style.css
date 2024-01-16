@@ -1,8 +1,5 @@
 /* Code CSS */
 
-/* Importation de la police de caractère */
-@import url('https://fonts.googleapis.com/css?family=Basis+Grotesque');
-
 /* Constantes */
 :root{
     --couleur-principale: #7101FF;
@@ -25,10 +22,16 @@ body {
     position: relative; /* Permet de positionner les éléments enfants par rapport à ce conteneur */
 }
 
+a {
+    color: var(--couleur-texte) !important; /* Couleur des liens */
+    text-decoration: none !important; /* Supprime le soulignement des liens */
+}
+
 
 .navbar-dark {
-    border-color: var(--couleur-principale); /* Couleur de la bordure de la barre de navigation */
+    border: 1px solid var(--couleur-principale); /* Couleur de la bordure de la barre de navigation */
     margin: 1vh;
+    border-radius: 6px;
 }
 
 .navbar-nav .nav-link, .navbar-brand {
@@ -40,6 +43,20 @@ body {
 .jumbotron {
     background-color: var(--couleur-fond); /* Couleur de fond du jumbotron */
     color: var(--couleur-texte) !important;/* Couleur du texte de la section "Portfolio" */
+    border-radius: 1vh;
+    padding-left: 60px ;
+    padding-right: 60px ;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-bottom: 30px;
+}
+
+.dropdown-menu[data-bs-popper]{
+    margin-top: 15px;
+    border: 1px solid var(--couleur-principale); /* Couleur de la bordure de la barre de navigation */
+    border-radius: 6px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .box-1 {

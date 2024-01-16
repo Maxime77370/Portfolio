@@ -52,15 +52,8 @@ class Caravel {
         this.btnLeft = document.querySelector('.caravel-btn-left');
         this.btnRight = document.querySelector('.caravel-btn-right');
         this.body = document.body;
-        this.offset = this.allCaravel[0].offsetWidth * 0.3;
-
-        this.parent.style.height = this.allCaravel[0].offsetHeight + 30 + 'px';
-
-        this.nb_caravel = this.allCaravel.length;
 
         this.initializeCaravels();
-
-        this.pos_max = this.allCaravel[0].offsetWidth * (this.nb_caravel-1) + this.offset * this.nb_caravel;
 
         this.n = 0;
         this.boost_max = 0;
@@ -85,6 +78,11 @@ class Caravel {
      * Initializes the caravels' styles and positions.
      */
     initializeCaravels() {
+
+        // Set height for the parent element
+        this.offset = this.allCaravel[0].offsetWidth * 0.3;
+        this.nb_caravel = this.allCaravel.length;
+
         // Set styles and positions for each caravel
         for (let i = 0; i < this.allCaravel.length; i++) {
             this.allCaravel[i].style.position = 'absolute';
@@ -102,13 +100,14 @@ class Caravel {
         var rectTop = rect.top + window.scrollY;
         this.btnLeft.style.top = this.allCaravel[0].offsetHeight / 2 + rectTop + 'px';
         this.btnRight.style.top = this.allCaravel[0].offsetHeight / 2 + rectTop + 'px';
-        console.log(rectTop)
+
+        this.pos_max = this.allCaravel[0].offsetWidth * (this.nb_caravel-1) + this.offset * this.nb_caravel;
+        this.parent.style.height = this.allCaravel[0].offsetHeight + 30 + 'px';
     }
 
 
     updateBodyWidth() {
-        this.body.style.width = window.innerWidth + 'px';
-        this.boost_pos_start = parseInt(this.allCaravel[0].style.left.replace('px',''));
+        this.initializeCaravels();
     }
 
     /**
