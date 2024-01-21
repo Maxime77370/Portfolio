@@ -4,7 +4,7 @@
   "description": "Style : `Dynamiques`.",
   "main": "portfolio.js",
   "scripts": {
-    "test": "node js/server.js
+    "test": "node js/server.js",
     "start": "node js/server.js"
   },
   "author": "",
