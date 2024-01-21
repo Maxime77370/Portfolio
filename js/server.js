@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'html', 'portfolio.html'));
 });
 
+
 // Démarrage du serveur
 app.listen(port, () => {
     console.log(`Le serveur est en cours d'exécution sur http://localhost:${port}/`);
